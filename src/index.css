@@ -142,8 +142,35 @@ Color Generator
 
 .container {
   text-align: center;
-  padding: 2rem 0;
+  display: flex;
+  align-items: center;
   height: 100px;
+  padding-left: 2rem;
+}
+.container h3 {
+  margin-bottom: 0;
+  margin-right: 2rem;
+}
+input {
+  border-color: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-top-left-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+}
+.btn {
+  background: var(--clr-primary-5);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-color: transparent;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  text-transform: capitalize;
+  color: var(--clr-white);
+  cursor: pointer;
+}
+input.error {
+  border: 2px solid var(--clr-red-dark);
 }
 .colors {
   min-height: calc(100vh - 100px);
